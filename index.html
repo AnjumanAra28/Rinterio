@@ -21,6 +21,7 @@
               colors: {
                 clifford: '#da373d',
                 'color-lime': '#ABEF5F',
+                'paragraph-color': '#494949',
               }
             }
           }
@@ -35,11 +36,11 @@
 </head>
 <body class="font-manrope">
     <!-- navbar section -->
-    <header class="mx-auto w-11/12 mt-6 bg-gradient-to-r from-white-0 to-white-100 ">
-        <nav class="">
+    <header class="mx-auto w-10/12 mt-6 bg-gradient-to-r from-white-0 to-white-100 relative overflow-hidden">
+        <nav>
             <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
+                <div class="navbar-start ">
+                  <div class="dropdown absolute right-0">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -65,9 +66,11 @@
                     </li>
                     </ul>
                   </div>
-                  <div class="flex justify-center items-center gap-1">
-                    <i class="fa-solid fa-arrow-right -rotate-45 bg-color-lime p-1 rounded-full"></i>
-                    <a class="text-2xl font-bold">Rinterio</a>
+                  <div class="absolute left-0 md:static">
+                    <div class="flex justify-center items-center gap-1">
+                        <i class="fa-solid fa-arrow-right -rotate-45 bg-color-lime p-1 rounded-full"></i>
+                        <a class="text-2xl font-bold">Rinterio</a>
+                      </div>
                   </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -80,25 +83,25 @@
                     </li>
                   </ul>
                 </div>
-                <div class="navbar-end ">
+                <div class="navbar-end">
                   <div class="flex justify-center items-center space-x-5">
                     <i class="fa-solid fa-magnifying-glass bg-gray-300 p-2 text-white rounded-full cursor-pointer hidden lg:block"></i>
                     <i class="fa-solid fa-cart-shopping bg-gray-300 p-2 text-white rounded-full cursor-pointer hidden lg:block"></i>
-                    <a class="btn bg-color-lime rounded-3xl font-bold">Book Consult  
-                        <i class="fa-solid fa-arrow-right -rotate-45 text-color-lime p-1 rounded-full bg-black"></i>
+                    <a class="btn bg-color-lime rounded-3xl font-bold hidden md:block pt-3">Book Consult  
+                        <i class="fa-solid fa-arrow-right -rotate-45 text-color-lime p-1 rounded-full  bg-black"></i>
                       </a>
                   </div>
                 </div>
               </div>
         </nav>
         <!-- banner section -->
-        <section class="my-14">
+        <section class="my-12">
             <div class="">
                 <img class="mx-auto" src="assets//banner.png" alt="A house design">
             </div>
             <div class="space-y-5 text-center mt-4">
                 <h1 class="text-3xl md:text-5xl font-black">A barn house of this design has a <br> striking appearance</h1>
-                <p class="max-w-3xl mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows <br>that flood the space with natural light.</p>
+                <p class="max-w-3xl mx-auto text-paragraph-color">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows <br>that flood the space with natural light.</p>
                 <a class="btn bg-color-lime rounded-3xl font-bold">View details 
                     <i class="fa-solid fa-arrow-right -rotate-45 text-black p-1 rounded-full bg-color-lime"></i>
                   </a>
@@ -106,6 +109,47 @@
         </section>
     </header>
     <main>
+        <section class="bg-base-200">
+            
+            <div class="w-10/12 mx-auto md:relative">
+                <!-- design thoughtful section -->
+                <img class="md:absolute top-14 hidden md:block" src="assets/Vector.png" alt="">
+                 <div class="flex flex-col md:flex-row md:py-16 space-y-6 justify-around"> 
+                    <!--text content  -->
+                    <div class="space-y-4 pt-12">
+                        <button class="btn rounded-3xl bg-white px-4 font-bold text-black ">
+                            <i class="fa-solid fa-arrow-right"></i> About Us
+                        </button>
+                        <h1 class="text-3xl md:text-4xl font-bold">We design thoughtful, <br> liveable spaces.</h1>
+                        <p class="text-paragraph-color">The barn house captivates with its blend of rustic charm and <br>
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        <div class="space-y-5">
+                            <div class="bg-white flex gap-5 rounded-xl shadow-lg items-center py-4">
+                                <img class="pl-7 " src="assets/commercial.png" alt="">
+                                <div>
+                                    <h3 class="text-black font-bold">Commercial</h3>
+                                    <p>The barn house captivates with its blend of rustic <br> charm and modern.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white flex gap-5 rounded-xl shadow-lg items-center py-4">
+                                <img class="pl-7 " src="assets/residential.png" alt="">
+                                <div>
+                                    <h3 class="text-black font-bold">Residential</h3>
+                                    <p>The barn house captivates with its blend of rustic <br> charm and modern.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   <!-- image content -->
+                   <div>
+                     <img class="w-11/12" src="assets/Rectangle.png" alt="">
+                   </div>
+                 </div>
+
+            </div>
+
+        </section>
 
     </main>
     <footer>
